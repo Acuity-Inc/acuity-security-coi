@@ -1,0 +1,3 @@
+
+## Terraform Validate
+terraform validate

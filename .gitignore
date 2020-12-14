@@ -1,0 +1,32 @@
+#  Local .terraform directories
+**/.terraform/*
+**/.terraform
+./*.tfstate
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+**/terraform.tfstate
+*.terraform.tfstate.lock.info
+**/plugins
+
+# tfplan file
+tfplan
+
+# .tfvars files
+*.tfvars
+
+# Log Files
+*.log
+
+# Win and Linux programs and applications
+*.exe
+*.msi
+*.zip
+*.SHA512
+*rpm
+*.gz
+*.bz2
+*.pub
+*.xml
+*-CentOS-7 
