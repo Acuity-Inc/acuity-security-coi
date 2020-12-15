@@ -84,6 +84,7 @@ cd 'desktop/acuity-security-coi/azurePolicy'
 cd ~
 
 cd 'desktop/acuity_security_coi_demo/azurePolicy'
+
 .\tf_destroy.ps1
 
 
