@@ -38,7 +38,9 @@
 
 # 2) Clone Git Repository to the 'desktop' 
 cd ~
+
 cd 'desktop'
+
 git clone https://github.com/Acuity-Inc/acuity-security-coi.git
 
 # 2) Open new desktop clone folder in VS Code, or other code view software
@@ -47,6 +49,7 @@ git clone https://github.com/Acuity-Inc/acuity-security-coi.git
 
 # 3) Navigate to 'deploymentVars.ps1' variables file
 cd ~
+
 cd 'desktop/acuity-security-coi'
 
 # 4) Open the 'deploymentVars.ps1' file 
@@ -64,6 +67,7 @@ deploymentVars.ps1
 
 # 6) Change directory into 'azurePolicy' folder
 cd ~
+
 cd 'desktop/acuity-security-coi/azurePolicy'
 
 # 7) Run the deployment script, which will run each of the below scripts, at one time, in the proper order
@@ -78,6 +82,7 @@ cd 'desktop/acuity-security-coi/azurePolicy'
 ## To delete all resources created by this deployment
 # 1) Run Terraform Destroy script
 cd ~
+
 cd 'desktop/acuity_security_coi_demo/azurePolicy'
 .\tf_destroy.ps1
 
