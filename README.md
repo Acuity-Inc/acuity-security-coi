@@ -32,19 +32,27 @@
   - # https://code.visualstudio.com/
 
 ## Steps to replicate results shows in COI Demo:
-# 1) Clone Git Repository to the 'desktop' 
+# 1) Open Powershell as an administrator
+- # Type 'Powershell' in the start menu
+- # Right Click 'Powershell' or 'Powershell 7', and select 'Run as administrator'
+
+# 2) Clone Git Repository to the 'desktop' 
 cd ~
 cd 'desktop'
 git clone https://github.com/Acuity-Inc/acuity-security-coi.git
 
-# 2) Navigate to 'deploymentVars.ps1' variables file
+# 2) Open new desktop clone folder in VS Code, or other code view software
+# - File 'Add Folder to Workspace'
+# - Select 'Desktop\acuity-security-coi'
+
+# 3) Navigate to 'deploymentVars.ps1' variables file
 cd ~
 cd 'desktop/acuity-security-coi'
 
-# 3) Open the 'deploymentVars.ps1' file 
+# 4) Open the 'deploymentVars.ps1' file 
 deploymentVars.ps1
 
-# 4) Enter in desired values for each variable
+# 5) Enter in desired values for each variable
 - # $tenant_id
 - # $subscription_Id
 - # $subIdentifier
@@ -54,15 +62,11 @@ deploymentVars.ps1
 - # $azRegion  
 - # $regionSuffix
 
-# 5) Open Powershell as an administrator
-- # Type 'Powershell' in the start menu
-- # Right Click 'Powershell' or 'Powershell 7', and select 'Run as administrator'
-
 # 6) Change directory into 'azurePolicy' folder
 cd ~
 cd 'desktop/acuity-security-coi/azurePolicy'
 
-# 6) Run the deployment script, which will run each of the below scripts, at one time, in the proper order
+# 7) Run the deployment script, which will run each of the below scripts, at one time, in the proper order
 ./deployScript.ps1
 
   # Each script can be run individually, in the following order, rather than using the 'deployScript'

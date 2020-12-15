@@ -4,7 +4,7 @@ $tenant_id              = '2636bcf7-dafd-43a0-ac97-e92b4947ea04'
 $subscription_Id        = '31808d7a-bb2f-48ea-882a-bcc4489e7b31'
 $environment            = "AzureCloud" # Get-AzureRmEnvironment | Select-Object Name
 $projectPrefix          = 'coi'
-$envIdentifier          = "gv"
+$envIdentifier          = "demo"
 $azRegion               = 'eastus' 
 $regionSuffix           = "eus"
 
