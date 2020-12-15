@@ -1,3 +1,4 @@
 
 # Execute Terraform configuration
-  terraform apply tfplan
+  
+terraform apply tfplan
