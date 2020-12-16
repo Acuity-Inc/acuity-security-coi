@@ -7,12 +7,7 @@ $projectPrefix          = 'coi'
 $envIdentifier          = "demo"
 $azRegion               = 'eastus' 
 $regionSuffix           = "eus"
-
-# Variables with no input required, created using the above variables via 'concatination'
 $tf_state_rg            = "$projectPrefix-$envIdentifier-core-rg-$regionSuffix"
-$tf_state_sa_sku        = 'Standard_RAGRS'
-$tf_state_sa_name       = $projectPrefix + $envIdentifier + $subIdentifier + "tf" + $regionSuffix
-$tf_state_sa_container  = "$projectPrefix-$envIdentifier-terraform-state"
 
 # Choose the desired scope for Azure Policy Assignment
 $rgScope                = "/subscriptions/$subscription_Id/ResourceGroups/$tf_state_rg"

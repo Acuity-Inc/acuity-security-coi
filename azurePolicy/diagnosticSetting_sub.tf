@@ -6,6 +6,13 @@ resource "azurerm_monitor_diagnostic_setting" "sub" {
   log_analytics_workspace_id = azurerm_log_analytics_workspace.laws.id
   depends_on                 = [azurerm_log_analytics_workspace.laws]
 
+  lifecycle {
+    ignore_changes = [
+       log,
+       metric
+    ]
+  }
+
   log {
       category = "Administrative"
       enabled  = true

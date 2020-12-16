@@ -7,7 +7,7 @@ resource "azurerm_policy_assignment" "set-assignment-1" {
   policy_definition_id = azurerm_policy_set_definition.policy-set-1.id
   identity { type = "SystemAssigned" }
   location             = azurerm_resource_group.core-rg.location
-  
+
   parameters = <<PARAMETERS
     {
     "allowedRegions": {

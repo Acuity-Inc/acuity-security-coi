@@ -6,4 +6,4 @@
 az login
 
 ## Terraform init
-  Terraform init
+Terraform init
