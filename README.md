@@ -52,6 +52,8 @@ cd ~
 
 cd 'desktop/acuity-security-coi'
 
+ls
+
 # 4) Open the 'deploymentVars.ps1' file 
 deploymentVars.ps1
 
